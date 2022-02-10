@@ -1,0 +1,29 @@
+1. Install the Python  
+
+python.org
+
+to check the version
+
+>> python --version (windows)
+>> python3 --version
+
+->type python in cmd or bash to enter into the shell , (python3 for MAC)
+-> to come out <exit()>
+
+2.Install Editors (SUBLIME , VSCODE )
+
+3. Anacoda Juypter notebook
+ -> create a practise working directory (mkdir)
+ -> change the path to that diretory (cd /path)
+ -> install the jupyter by this command <conda install jupyter notebook>
+
+ -> to open the jupyter notebook type <jupyter notebook> in cmd or bash
+ ->it will be opened in default browser.
+-> to stop : CNTRL+D or C
+
+
+4. Clone the GitHUB
+
+-> git clone https://github.com/anil-k-rajamoni18/PYTHON_TUTS.git
+
+

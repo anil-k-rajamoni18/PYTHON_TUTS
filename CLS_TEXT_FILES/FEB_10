@@ -1,8 +1,8 @@
 1. Install the Python  
 
-python.org
+website : python.org
 
-to check the version
+=> to check the version
 
 >> python --version (windows)
 >> python3 --version
@@ -25,5 +25,13 @@ to check the version
 4. Clone the GitHUB
 
 -> git clone https://github.com/anil-k-rajamoni18/PYTHON_TUTS.git
+
+5. Pullling the Changes/CODE:
+ -> open the git bash orginal repo floder
+ -> type
+    -> git status
+    -> git pull
+
+
 
 

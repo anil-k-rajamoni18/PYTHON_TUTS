@@ -1,0 +1,10 @@
+Fundamentals Concepts in Pythonn
+Variables
+
+
+operators
+conditionals statements
+branching statements
+looping statements
+functions
+OOP's

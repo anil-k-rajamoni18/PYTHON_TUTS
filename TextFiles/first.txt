@@ -1,10 +1,14 @@
-Fundamentals Concepts in Pythonn
-Variables
+Top 10 Python Libraries for machine learning which are:
 
-
-operators
-conditionals statements
-branching statements
-looping statements
-functions
-OOP's
+TensorFlow
+Scikit-Learn
+Numpy
+Keras
+PyTorch
+LightGBM
+Eli5
+SciPy
+Theano
+Pandas
+Python is the most powerful language you can still read.
+- Pau Dubois

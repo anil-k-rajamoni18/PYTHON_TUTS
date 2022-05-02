@@ -1,0 +1,55 @@
+{% extends "base.html" %} {% block content %}
+
+
+<div class="container">
+    <h1>COVID-19 Visual Analysis</h1>
+    <div class="row">
+
+        <div class="col-4">
+            <h5>
+                <font color="red">Top 15 States</font>
+            </h5>
+            <p>This is the province state wise covid-19 data upto 20 july 2020.</p>
+            <table class="table-responsive-sm table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Province State</th>
+                        <th scope="col">Confirmed
+                    </tr>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for pair in pairs %}
+                    <tr>
+                        <td>{{ pair[0]}}</td>
+                        <td>{{ pair[1]}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="col-8">
+            <h5>
+                <font color="firebrick">world map of corona cases. The bigger the circle, bigger is the impace of corona
+                    virus in that province state.</font>
+            </h5>
+            <p>using the same data we provided an updated map that contains</p>
+            {{cmap|safe}} 
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <div class='footer'>
+        <div class="contact">
+            <a target="_blank" href="https://github.com/anil-k-rajamoni18/Covid19-Visual-Analysis"><i
+                    class="fab fa-github fa-lg contact-icon">GitHub</i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/anil-k-rajamoni-0ba063183/"><i
+                    class="fab fa-linkedin fa-lg contact-icon"></i>LinkedIn</a>
+        </div>
+        <p class='footer-description'>Made with ❤️ by Anil K Rajamoni.</p>
+    </div>
+</div>
+
+
+
+{% endblock %}

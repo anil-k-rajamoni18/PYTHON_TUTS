@@ -43,31 +43,33 @@ def calculator():
         else:
             sum_res = "invalid symbol"
         res=f'YOUR RESULT IS \n {num1} {sym} {num2} = {sum_res}'
+        print(res)
         return render_template('result.html',result=res)
 
 
 
-# @app.route('/pratap')
-# def pratap():
-#     return "Hey pratap this is you page!"
+@app.route('/deepa')
+def deepa():
+    return "Hey deepa this is you page!"
 
-# @app.route('/hello')
-# def hello():
-#     return 'Hello, World'
+@app.route('/hello')
+def hello():
+    return 'Hello, World'
 
-# @app.route('/ak')
-# def ak():
-#     return 'Hello, Hey AK'
+@app.route('/ak')
+def ak():
+    return 'Hello, Hey AK'
 
-# @app.route("/<name>")
-# def hey(name):
-#     return f"Hello, {escape(name)}!"
-
-
-# @app.route("/<name>/<name1>")
-# def hey1(name,name1):
-#     return f"Hello, {escape(name)}!  {escape(name1)}"
+@app.route("/<name>")
+def hey(name):
+    return f"Hello, {escape(name)}!"
 
 
-if __name__=="__main__":
+@app.route("/<name>/<name1>")
+def hey1(name,name1):
+    return f"Hello, {escape(name)}!  {escape(name1)}"
+
+
+if __name__=="__main__": #it is True only when you run the file directly
     app.run(debug=True, use_reloader=False)
+    # app.run()

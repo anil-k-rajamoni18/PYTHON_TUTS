@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_page():
-	return render_template('index.html',data='Hey Hi Im from BackEnd Flask')
+	return render_template('home.html',data='Hey Hi Im from BackEnd Flask')
 
 @app.route('/random',methods=['POST'])
 def random_method():

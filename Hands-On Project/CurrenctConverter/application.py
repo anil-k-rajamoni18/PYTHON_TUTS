@@ -1,17 +1,18 @@
+from email.mime import application
 from flask import Flask , render_template,request
 from markupsafe import escape
 import json
 import requests
 
-app = Flask(__name__) #instance of flask  #__name__ = __main__
+application = Flask(__name__) #instance of flask  #__name__ = __main__
 
 
-@app.route("/")
+@application.route("/")
 def hello_world():
     return render_template('index.html')
 
 
-@app.route('/convert',methods=["POST"])
+@application.route('/convert',methods=["POST"])
 def convert():
     if request.method=='POST':
         print("Hey HI")
@@ -38,4 +39,4 @@ def convert():
 
 
 if __name__=="__main__":
-    app.run(debug=True, use_reloader=False)
+    application.run(debug=True, use_reloader=False)
